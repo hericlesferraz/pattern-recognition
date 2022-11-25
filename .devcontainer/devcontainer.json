@@ -1,0 +1,27 @@
+{
+	"name": "Pattern recognition",
+	"context": ".",
+	"dockerFile": "Dockerfile",
+	"extensions": [
+		"ms-python.python",
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring"
+	],
+	"settings": {
+		"python.formatting.provider": "black",
+        "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+		"terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "/bin/bash",
+                "icon": "terminal-bash"
+            },
+            "zsh": {
+                "path": "/bin/zsh"
+            } 
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+	},
+    "postCreateCommand": "pip install poetry && poetry env use 3.10 && poetry install",
+	"remoteUser": "dev_machine"
+}
