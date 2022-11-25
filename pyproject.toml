@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pattern recognition"
+version = "0.1.0"
+description = "Project to resolve technical challenge"
+authors = ["Hericles Ferraz"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.6.0.66"
+torch = "^1.13.0"
+torchvision = "^0.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
