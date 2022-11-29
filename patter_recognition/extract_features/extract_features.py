@@ -84,10 +84,8 @@ class ExtractFeaturesCnn:
 
 class ExtractFeaturesBagOfVisualWords:
     """Extract the features using the baf of visual words"""
-    def __init__(self, num_images) -> None:
-        self.num_images = num_images
 
-    def load_dataset(self, path_to_dataset: str) -> Tuple(dict, list):
+    def load_dataset(self, path_to_dataset: str) -> Tuple[dict, list]:
         """Load the dataset as array
 
         Args:
@@ -105,16 +103,13 @@ class ExtractFeaturesBagOfVisualWords:
             for name_image in os.listdir(folder_path):
                 img_path = f"{folder_path}/{name_image}"
                 img = cv2.imread(img_path)
+                img = cv2.resize(img, (128, 128))
                 if img is None:
                     print(img_path)
                     continue
                 if img is not None:
                     images_list.append(img)      
-                
-                count += 1
-                if count > self.num_images:
-                    break
-                    
+                                    
             images_dict[label] = images_list
             labels.append(label)
 
@@ -220,7 +215,7 @@ class ExtractFeaturesBagOfVisualWords:
         return df_dataset
 
 
-    def train_test_data(self, df: pd.DataFrames, test_size: float):
+    def train_test_data(self, df: pd.DataFrame, test_size: float):
         """Divides the entire dataset in train and test_summary_
 
         Args:
