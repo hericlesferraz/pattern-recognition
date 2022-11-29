@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pattern recognition"
 version = "0.1.0"
-description = "Project to resolve technical challenge"
+description = "Project to advances in pattern recognition and tecnical experiences"
 authors = ["Hericles Ferraz"]
 readme = "README.md"
 
@@ -10,6 +10,15 @@ python = "^3.10"
 opencv-python = "^4.6.0.66"
 torch = "^1.13.0"
 torchvision = "^0.14.0"
+ipython = "^8.6.0"
+jupyter = "^1.0.0"
+scikit-learn = "^1.1.3"
+matplotlib = "^3.6.2"
+opencv-contrib-python = "^4.6.0.66"
+pandas = "^1.5.2"
+scikit-image = "^0.19.3"
+tqdm = "^4.64.1"
+split-folders = "^0.5.1"
 
 
 [build-system]
