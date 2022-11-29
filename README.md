@@ -8,6 +8,7 @@ Metrics choosed of classification:
   - precision: The precision measures the model's accuracy in classifying a sample as positive.
   - recall: Quantifies the number of correct positive predictions made out of all positive predictions
   - f1-score: Combines the precision and recall, and give a  harmonic mean of them
+  
   This metrics are presented in each jupyter notebook.
   
 1. Using the Bag of Visual Words:
