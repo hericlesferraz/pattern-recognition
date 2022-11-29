@@ -16,7 +16,13 @@ The results in this approach showed that the number of visual words is very impo
 showed convergency. 
 ![results](https://user-images.githubusercontent.com/65249438/204516693-3cc9f285-a1fc-45de-97df-a9b5ca90ac7e.png)
 As the value was increased, an increase in performance was seen, with a lot of computational cost, but the models takes a long time to converge, having horrible 
-results in this approach
+results in this approach.
+
+1.1 How to improve the results:
+- Define the type of load the dataset, without uses append in the images, dividing in batches sizes
+- Uses methods of data augumentation to improve the quantity of images
+- Search another metods to extract the quantity of visual words, beacuase kmeans is very slowly
+- Compare the extract of keyponitns using SIFT and HOG
 
 Due to this, feature extraction with vgg16 showed much better results.
 
@@ -30,7 +36,7 @@ The results of this case are great. Each class of dataset has a good metric
 1. CLone the project
 2. Install the poetry
 3. Execute:
-  ```poetry init```
+  ```poetry install```
   ```poetry shell```
 
 4. Now, you can open the jupyter notebook and execute
