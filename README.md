@@ -18,7 +18,7 @@ showed convergency.
 As the value was increased, an increase in performance was seen, with a lot of computational cost, but the models takes a long time to converge, having horrible 
 results in this approach.
 
-1.1 How to improve the results:
+1.1 Possibilities to improve the results:
 - Define the type of load the dataset, without uses append in the images, dividing in batches sizes
 - Uses methods of data augumentation to improve the quantity of images
 - Search another metods to extract the quantity of visual words, beacuase kmeans is very slowly
@@ -28,6 +28,12 @@ Due to this, feature extraction with vgg16 showed much better results.
 
 2. Using the vgg16 cnn as features exctator:
 The results of this case are great. Each class of dataset has a good metric
+
+2.1 Possibilities to improve the results:
+- Use more elaborated methods of data augmentation
+- Alterate the space collors os images dataset
+- Test more variations of hiperparameters
+- Test anothers CNNs as feature extractor and compare
 
 ![image](https://user-images.githubusercontent.com/65249438/204488555-d8064a78-eac4-4cf6-8c28-23bd45fa299d.png)
 
